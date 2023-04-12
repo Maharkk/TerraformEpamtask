@@ -19,3 +19,11 @@ resource "aws_instance" "app_server" {
     Name = "tftest"
   }
 }
+resource "aws_s3_bucket" "d" {
+  bucket = "kk-77-task"
+
+  tags = {
+    Name        = "My-bucket"
+    Environment = "Dev"
+  }
+}
